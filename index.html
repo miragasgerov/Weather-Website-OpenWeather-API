@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body onload="startTime(),startDay()">
+
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-between weatherHero">
+                    <div class="weatherClock">
+                        <h3 id="clock">7:10 AM</h3>
+                        <span id="day">Friday, January 26, 2018</span>
+                    </div>
+
+                    <div class="searchCity">
+                        <input type="search" id="searchBar" class=" form-control" placeholder="Search City.." />
+                    </div>
+
+                    <div class="weatherPlace">
+                        <h3 class="city"></h3>
+                        <p class="country"></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="weatherAbout">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <img src="./img/sun.jpg" class="img-fluid">
+                    <span class="weatherAboutDaily"></span>
+                </div>
+
+                <div class="col-lg-2 tempMinMax" >
+                    <div class="maximumTemp d-flex justify-content-between">
+                        <p class="tempMax">0°C</p>
+                        <span class="ms-5">Maximum</span>
+                    </div>
+                    <div class="minimumTemp d-flex justify-content-between">
+                        <p class="tempMin">0°C</p>
+                        <span class="ms-5">Minimum</span>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2"></div>
+
+                <div class="col-lg-2 temperatureDiv pt-2 ">
+                    <img src="./img/20944273.jpg">
+                    <span class="temperature mt-3 ms-3"></span>
+                </div>
+
+                <div class="col-lg-2 humidity pt-2 ">
+                    <img src="./img/13362.jpg">
+                    <span class="humidityDegree mt-3 ms-3"></span>
+                </div>
+
+                <div class="col-lg-2 windDiv pt-2 ">
+                    <img src="./img/wind.jpg">
+                    <span class="wind mt-3 ms-5"></span>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
